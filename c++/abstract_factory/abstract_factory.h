@@ -1,0 +1,5 @@
+class AbstractFactory {
+    public:
+        AbstractFactory() {}
+        
+};

@@ -1,1 +1,2 @@
-: hello.c |> g++ hello.c -o hello |> hello
+: foreach *.c |> g++ -Wall -c %f -o %o |> %B.o
+: *.o |> g++ %f -o %o |> runner.runner
