@@ -1,4 +1,5 @@
 #include "factory.h"
+#include <string>
 
 std::string const ProductFactory::createStringHello()
 {
@@ -7,13 +8,13 @@ std::string const ProductFactory::createStringHello()
 }
 std::string const ProductFactory::createStringGoodbye()
 {
-    std::string hello = "Goodbye";
-    return hello;
+    std::string goodbye = "Goodbye";
+    return goodbye;
 }
 std::string const ProductFactory::createStringWoah()
 {
-    std::string hello = "Woah";
-    return hello;
+    std::string woah = "Woah";
+    return woah;
 }
 
 int main(void)
@@ -26,11 +27,13 @@ int main(void)
     std::string goodbye = factory.createStringGoodbye();
     std::string woah = factory.createStringWoah();
 
+    std::string combination = factory.createStringHello() + factory.createStringGoodbye() + factory.createStringWoah();
 
     std::cout << goodbye << std::endl;
     std::cout << woah << std::endl;
     std::cout << woah << std::endl;
     std::cout << woah << std::endl;
+    std::cout << combination << std::endl;
     return 0;
 
 }

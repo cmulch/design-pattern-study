@@ -8,5 +8,10 @@
     "directory": "/home/cmulch/design-pattern-study/c++/abstract_factory",
     "command": "g++ -Wall -c abstract_factory.c -o abstract_factory.o",
     "file": "abstract_factory.c"
+},
+{
+    "directory": "/home/cmulch/design-pattern-study/c++/factory_method",
+    "command": "g++ -Wall -c factory.c -o factory.o",
+    "file": "factory.c"
 }
 ]
