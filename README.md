@@ -5,4 +5,4 @@ To compile and use the C++ examples, tup is used. With the appropriate dependenc
 
 Contributors: 
 Connor Mulcahy (C++)    - IBM, University of Minnesota  
-Allen Martin   (Java)   -   
+Allen Martin   (Java)   - Winona State University  
