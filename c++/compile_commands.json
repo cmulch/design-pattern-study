@@ -1,0 +1,12 @@
+[
+{
+    "directory": "/home/cmulch/design-pattern-study/c++/",
+    "command": "g++ -Wall -c hello.c -o hello.o",
+    "file": "hello.c"
+},
+{
+    "directory": "/home/cmulch/design-pattern-study/c++/abstract_factory",
+    "command": "g++ -Wall -c abstract_factory.c -o abstract_factory.o",
+    "file": "abstract_factory.c"
+}
+]
