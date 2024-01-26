@@ -1,39 +1,39 @@
 #include "factory.h"
 #include <string>
 
-std::string const ProductFactory::createStringHello()
-{
-    std::string hello = "Hello";
-    return hello;
+int NovelDataType::iterate_data() {
+    int sum = 0;
+
+    product = build_array();
+   
+    for (int i = 0; i < 64; i++) {
+        sum += product[i];
+    }
+
+    return sum;
 }
-std::string const ProductFactory::createStringGoodbye()
-{
-    std::string goodbye = "Goodbye";
-    return goodbye;
+
+int* ConcreteNovelDataType::build_array() {
+    int* values = new int[64];
+
+    for (int i = 0; i < 64; i++)
+    {
+        values[i] = 1;
+    }
+
+    return values;
 }
-std::string const ProductFactory::createStringWoah()
-{
-    std::string woah = "Woah";
-    return woah;
+
+void ConcreteProduct::doProductThings() {
+    ConcreteNovelDataType newType;
+
+    std::cout << newType.iterate_data() << std::endl;
 }
 
 int main(void)
 {
-    ProductFactory factory;
+    ConcreteProduct product;
 
-    std::string someString = factory.createStringHello();
-    std::cout << someString << std::endl;
-
-    std::string goodbye = factory.createStringGoodbye();
-    std::string woah = factory.createStringWoah();
-
-    std::string combination = factory.createStringHello() + factory.createStringGoodbye() + factory.createStringWoah();
-
-    std::cout << goodbye << std::endl;
-    std::cout << woah << std::endl;
-    std::cout << woah << std::endl;
-    std::cout << woah << std::endl;
-    std::cout << combination << std::endl;
+    product.doProductThings();
     return 0;
-
 }
